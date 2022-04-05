@@ -2,7 +2,8 @@ pipeline {
     agent any 
     stages {
         stage('Build') { 
-            steps {    
+            steps {
+               sh "printenv"    
                sh "mvn clean compile"
             }
         }
