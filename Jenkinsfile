@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Archving') { 
             steps {
-               archvingArtifacts '**/target/*.jar'
+               archiveArtifacts '**/target/*.jar'
             }
         }
     }
